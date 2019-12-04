@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.ColorThief</id>
+    <version>1.0.0</version>
+    <title>VL.ColorThief</title>
+    <authors>KSemenenko, sebescudie</authors>
+    <owners>sebescudie</owners>
+    <projectUrl>https://github.com/superbien/VL.ColorThief</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>ColorThief implementation for vvvv gamma</summary>
+    <description>ColorThief implementation for vvvv gamma</description>
+    <copyright>Copyright © 2019 by sebescudie. All rights reserved.</copyright>
+    <tags>VL color palette</tags>
+    <dependencies>
+        <dependency id="ksemenenko.ColorThief" version="1.1.1.4"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\**\*.vl" target="" exclude="" />
+  </files>
+</package>
