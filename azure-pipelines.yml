@@ -15,11 +15,6 @@ steps:
   inputs:
     versionSpec: 4.3.0 
 
-- task: NuGet@0
-  displayName: 'Restore packages'
-  inputs:
-    command: 'restore'
-
 - task: NuGetCommand@2
   displayName: 'NuGet pack'
   inputs:
