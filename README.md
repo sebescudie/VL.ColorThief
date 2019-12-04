@@ -4,4 +4,8 @@ VL implementation of [KSemenenko's ColorThief](https://github.com/KSemenenko/Col
 
 ## Installation
 
-> `nuget install VL.ColorThief`
+`nuget install VL.ColorThief`
+
+## Usage
+
+Press F1 to open the Help Browser and search for ColorThief
