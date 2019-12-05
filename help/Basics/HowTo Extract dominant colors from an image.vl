@@ -208,7 +208,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="RipAtLV2R72OdjQcjG1uEw" Name="Bounds" Kind="InputPin" DefaultValue="830, 277, 541, 513">
+            <Pin Id="RipAtLV2R72OdjQcjG1uEw" Name="Bounds" Kind="InputPin" DefaultValue="1341, 205, 541, 513">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -251,7 +251,7 @@
             <Pin Id="LeJhU9OfYlrL61S8qQs8w5" Name="Output" Kind="OutputPin" />
             <Pin Id="VRwe9EnXZzQP8YHsBDKXpo" Name="Actual Bounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="382,261,190,92" Id="BKhIU96mwoBNW1AHiPhnzz">
+          <Node Bounds="382,291,190,82" Id="BKhIU96mwoBNW1AHiPhnzz">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -267,7 +267,7 @@
             <Patch Id="J4bLHgMzOXPL0Wt4LziqFF" ManuallySortedPins="true">
               <Patch Id="GvBgKC3k1MCMNUys1WRMM8" Name="Create" ManuallySortedPins="true" />
               <Patch Id="EoKhYG5JxGBM89ME7ZiUxw" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="394,296,65,19" Id="VPEAW4kCDKcPu2zCFPFvls">
+              <Node Bounds="394,326,65,19" Id="VPEAW4kCDKcPu2zCFPFvls">
                 <p:NodeReference LastCategoryFullName="RGBA.ColorThief.ColorThief" LastSymbolSource="VL.ColorThief.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetPalette" />
@@ -286,7 +286,7 @@
                 <Pin Id="T8iwRS0WUFsNYqCT231QJm" Name="Ignore White" Kind="InputPin" />
                 <Pin Id="VkWMD2JojvEMAQCa2CPMWO" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="504,296,56,19" Id="K5hkbsYfrUANPof77c85Jl">
+              <Node Bounds="504,326,56,19" Id="K5hkbsYfrUANPof77c85Jl">
                 <p:NodeReference LastCategoryFullName="RGBA.ColorThief.ColorThief" LastSymbolSource="VL.ColorThief.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetColor" />
@@ -301,11 +301,11 @@
                 <Pin Id="Dsn5CrVGZVSNZNJmu9zAyK" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="LXlpLMfvZ0WNscwSnuy9Zl" Bounds="396,268" Alignment="Top" />
-            <ControlPoint Id="PbKqb2o8TFgLyMDI92ONzg" Bounds="396,347" Name="Palette" Alignment="Bottom" />
-            <ControlPoint Id="Eg4nvqCt0DBP2AJu4Ma7jX" Bounds="506,347" Name="Color" Alignment="Bottom" />
+            <ControlPoint Id="LXlpLMfvZ0WNscwSnuy9Zl" Bounds="396,297" Alignment="Top" />
+            <ControlPoint Id="PbKqb2o8TFgLyMDI92ONzg" Bounds="396,368" Name="Palette" Alignment="Bottom" />
+            <ControlPoint Id="Eg4nvqCt0DBP2AJu4Ma7jX" Bounds="506,368" Name="Color" Alignment="Bottom" />
           </Node>
-          <Node Bounds="394,389,115,19" Id="SwUaqsq9rHrLVViRz1Nyaj">
+          <Node Bounds="394,419,115,19" Id="SwUaqsq9rHrLVViRz1Nyaj">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Extract dominant colors from an image.vl">
               <Choice Kind="ProcessNode" Name="DrawColors" />
             </p:NodeReference>
@@ -322,10 +322,59 @@
             <Pin Id="SXIlxbI3K1dNISxbpQk142" Name="Input 2" Kind="InputPin" />
             <Pin Id="TAvgiKy9md0ObGZawGL9bD" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="RvPBYslAIHrQDkzNxuU1Qt" Comment="Filename" Bounds="234,182,140,15" ShowValueBox="true" isIOBox="true" Value="sample.jpg">
+          <Pad Id="RvPBYslAIHrQDkzNxuU1Qt" Comment="Filename" Bounds="234,182,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\..\Images\7581_2.png">
             <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="625,289,80,80" Id="Nuwy86B3FAiLQnJGHLLvEt">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="V7ljTqgkFmnMtMfO2Gghll" Name="Condition" Kind="InputPin" />
+            <Patch Id="O0hDDOLdsJdM72HZIkQ26N" ManuallySortedPins="true">
+              <Patch Id="QaFizoRM1UoLIw4Z4dSGYt" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="BeePqEGvJTnOdzOjgWjYbz" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="637,321,56,19" Id="UhuLLBCboiBLEMy7pdiWmF">
+                <p:NodeReference LastCategoryFullName="RGBA.ColorThief.ColorThief" LastSymbolSource="VL.ColorThief.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetColor (Sorted)" />
+                </p:NodeReference>
+                <Pin Id="TnhAiTAt4wQQGfEu05987w" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OOvd98xLbH5PVU09DFKePq" Name="Quality" Kind="InputPin" />
+                <Pin Id="EphL70AIZzGOmvZH2ULUNB" Name="Ignore White" Kind="InputPin" />
+                <Pin Id="OsVGo96OYaTPG8hrnOqo5u" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="E8sAd2E3FuHL0joJZS6zO7" Bounds="611,224,107,56" ShowValueBox="true" isIOBox="true" Value="If GetColor does not give accurate results, try the Sorted version">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">7</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MsYFy2vWCPgL2i7Lf8c54Q" Bounds="617,400,172,19" ShowValueBox="true" isIOBox="true" Value="See this forum post">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Mn9BLi5X4v0NSdk2NhbWDt" Bounds="617,427,197,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/vl-colorthief/18028/2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="FeieOYGeP6MLlvOGaBuYGj" Name="Create" />
@@ -340,12 +389,12 @@
         <Link Id="Hd8mCkgIr5UPm7dmgwgc0D" Ids="Fcb8nnp0o9XMBdctk0VcYM,LXlpLMfvZ0WNscwSnuy9Zl" />
         <Link Id="BcfPhoA8yTGLq1ZoqoHGqY" Ids="VkWMD2JojvEMAQCa2CPMWO,PbKqb2o8TFgLyMDI92ONzg" />
         <Link Id="RfCbbnZEnLvLmLLrj6nYxa" Ids="LXlpLMfvZ0WNscwSnuy9Zl,MLAEeBScFW6OXqHLyfaFXi" />
-        <Link Id="MKbXBLPIX1NMHNrdi6XEz5" Ids="Dsn5CrVGZVSNZNJmu9zAyK,Eg4nvqCt0DBP2AJu4Ma7jX" />
         <Link Id="IEXWam94w8zPxmLs7EnqgO" Ids="PbKqb2o8TFgLyMDI92ONzg,JZUVerLMNVKOe8xvCPRNEQ" />
         <Link Id="F7bm8YjJoXvNkVILQPFtmv" Ids="TAvgiKy9md0ObGZawGL9bD,FyFKXo2KiD4MwN7jndtU8E" />
         <Link Id="V0fw70u6Q0mM1aVupHduuj" Ids="Ijd8BsoQc6MMxj8wzWTvNU,SXIlxbI3K1dNISxbpQk142" />
         <Link Id="GYbDnnpRmVtMC8CNvX23L5" Ids="Eg4nvqCt0DBP2AJu4Ma7jX,PXcfqDBlAoNP9G22dalsas" />
         <Link Id="Qac7ThfZqy6PXGf38ja7H6" Ids="RvPBYslAIHrQDkzNxuU1Qt,US4iEnGCsExQDQr3fjwinR" />
+        <Link Id="NweqVNXNIe2QMH3cKgrPM9" Ids="Dsn5CrVGZVSNZNJmu9zAyK,Eg4nvqCt0DBP2AJu4Ma7jX" />
       </Patch>
     </Node>
   </Patch>
