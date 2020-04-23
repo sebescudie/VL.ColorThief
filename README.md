@@ -4,7 +4,7 @@ VL implementation of [KSemenenko's ColorThief](https://github.com/KSemenenko/Col
 
 ## Installation
 
-`nuget install VL.ColorThief`
+`nuget install VL.ColorThief -pre`
 
 ## Usage
 
