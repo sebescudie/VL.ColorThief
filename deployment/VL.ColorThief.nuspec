@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.ColorThief</id>
-    <version>1.0.1-beta</version>
+    <version>1.0.1</version>
     <title>VL.ColorThief</title>
     <authors>KSemenenko, sebescudie</authors>
     <owners>sebescudie</owners>
@@ -17,7 +17,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="*.vl" target="" exclude="" />
-    <file src="**\*.vl" target="" exclude="" />
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\**\*.vl" target="" exclude="" />
+    <file src="..\**\*.png" target="" />
   </files>
 </package>
