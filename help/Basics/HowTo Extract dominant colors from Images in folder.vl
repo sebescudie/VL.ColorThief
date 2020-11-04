@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FNGbWvswdGGQC4W5Ia0Ykv" LanguageVersion="2019.2.0-0124-c7212e4e88" Version="0.128">
-  <NugetDependency Id="DgpRfqIpBEVQWHiVjjQNIv" Location="VL.CoreLib" Version="2019.2.0-0124-gc7212e4e88" />
+<Document xmlns:p="property" Id="FNGbWvswdGGQC4W5Ia0Ykv" LanguageVersion="2020.3.0.53" Version="0.128">
+  <NugetDependency Id="DgpRfqIpBEVQWHiVjjQNIv" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
   <Patch Id="Vcj5XxFbv1kMYLngwlgvdR">
     <Canvas Id="SgpOV0Ld5okPpo3a17ZNpg" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -17,7 +17,7 @@
           <Canvas Id="GjqNFAjM7soLiPPpyQmTzP" CanvasType="Group">
             <ControlPoint Id="DdglEk7o6xULgxpKvMjwAb" Bounds="252,189" />
             <Node Bounds="238,358,168,118" Id="TJswBA9fMxnPKaMO3pc2YV">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -203,7 +203,7 @@
       </p:NodeReference>
       <Patch Id="RZIE57YmMYVMym5IRZIDwL">
         <Canvas Id="Jf6lT3fbjJXPg9JT8M8KQj" CanvasType="Group">
-          <Node Bounds="970,175,85,19" Id="MyDthjFh3HUOjwQePcVwAt">
+          <Node Bounds="199,185,85,19" Id="MyDthjFh3HUOjwQePcVwAt">
             <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Dir" />
@@ -223,7 +223,7 @@
             <Pin Id="Q12zBMswvttOpTvwiASvd3" Name="Refresh" Kind="InputPin" />
             <Pin Id="O7r6Dgpg4InOIAJx4Kw4jp" Name="Files" Kind="OutputPin" />
           </Node>
-          <Pad Id="QBD0juhRiVbPF3dj39eCz7" Comment="Directory" Bounds="972,52,327,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\\MYImageFolder">
+          <Pad Id="QBD0juhRiVbPF3dj39eCz7" Comment="Directory" Bounds="201,62,327,15" ShowValueBox="true" isIOBox="true" Value="assets\">
             <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -231,7 +231,7 @@
               <p:pathtype p:Assembly="VL.Core" p:Type="VL.Core.PathType">Directory</p:pathtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EgTjzXj3VEgQKnYnBCKMSG" Comment="Refresh" Bounds="1052,132,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="EgTjzXj3VEgQKnYnBCKMSG" Comment="Refresh" Bounds="281,142,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -239,8 +239,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EYz6rNW3BazNBhfBO6GTjg" Comment="Files" Bounds="1148,207,444,95" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="918,393,243,349" Id="DtJcSOeCOzmQLxN5eLT2en">
+          <Pad Id="EYz6rNW3BazNBhfBO6GTjg" Comment="Files" Bounds="346,240,444,95" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="147,403,243,349" Id="DtJcSOeCOzmQLxN5eLT2en">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="ProcessAppFlag" Name="AsyncTask" />
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -255,9 +255,9 @@
                 <Pin Id="VVPcGXAnVfCNSmEhpIvi2m" Name="Input 1" Kind="InputPin" />
                 <Pin Id="LjurPoqMQCFOSe9jmsZbQl" Name="Output" Kind="OutputPin" />
               </Patch>
-              <ControlPoint Id="QbM32V6jmoYOvO16rcks1M" Bounds="1037,401" />
-              <ControlPoint Id="Hkkw9663RyEOvoOpsu8C1H" Bounds="972,735" />
-              <Node Bounds="970,449,179,255" Id="Q27vxZEDx4oNAmygoa7UpZ">
+              <ControlPoint Id="QbM32V6jmoYOvO16rcks1M" Bounds="266,411" />
+              <ControlPoint Id="Hkkw9663RyEOvoOpsu8C1H" Bounds="201,745" />
+              <Node Bounds="199,459,179,255" Id="Q27vxZEDx4oNAmygoa7UpZ">
                 <p:NodeReference LastCategoryFullName="Parallel" LastSymbolSource="VL.CoreLib.Experimental.vl">
                   <CategoryReference Kind="Category" Name="Parallel" />
                   <Choice Kind="ProcessAppFlag" Name="ForEach" />
@@ -272,10 +272,10 @@
                     <Pin Id="CYV5W3jhKouLlpPt87zaNh" Name="Input 2" Kind="InputPin" />
                     <Pin Id="NMdYFVM9B0tNu8P1VL9upo" Name="Output" Kind="OutputPin" />
                   </Patch>
-                  <ControlPoint Id="DsTXf5nZaU6NnLJhJkpR8g" Bounds="1007,459" />
-                  <ControlPoint Id="PF08rFLnkyDOBE9ErycKcu" Bounds="1103,457" />
-                  <ControlPoint Id="DDdniMwXfMaQGWJzHekHsL" Bounds="1007,697" />
-                  <Node Bounds="1005,510,46,26" Id="QqkbjGjXf00LScUUreEw3h">
+                  <ControlPoint Id="DsTXf5nZaU6NnLJhJkpR8g" Bounds="236,469" />
+                  <ControlPoint Id="PF08rFLnkyDOBE9ErycKcu" Bounds="332,467" />
+                  <ControlPoint Id="DDdniMwXfMaQGWJzHekHsL" Bounds="236,707" />
+                  <Node Bounds="234,520,46,26" Id="QqkbjGjXf00LScUUreEw3h">
                     <p:NodeReference LastCategoryFullName="System.Drawing.Bitmap" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="ClassType" Name="Bitmap" />
@@ -285,7 +285,7 @@
                     <Pin Id="NVEVX6uWB6OMIpSE6L50sR" Name="Filename" Kind="InputPin" />
                     <Pin Id="PMbNrrFSCjmLdTpatTcIHh" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="1005,476,55,19" Id="LJAaqZZlcANL5hxKTgeD8N">
+                  <Node Bounds="234,486,55,19" Id="LJAaqZZlcANL5hxKTgeD8N">
                     <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -293,8 +293,8 @@
                     <Pin Id="AGJdxzcB8dzOmY9yvX62F7" Name="Input" Kind="InputPin" />
                     <Pin Id="QuVaYJr0Y1dOGLsMWt0uQH" Name="Result" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="993,606,114,72" Id="D3XDZziKa8qMzllzwvXuhS">
-                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Node Bounds="222,616,114,72" Id="D3XDZziKa8qMzllzwvXuhS">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ApplicationStatefulRegion" Name="If" />
                       <FullNameCategoryReference ID="Primitive" />
@@ -307,7 +307,7 @@
                     <Patch Id="L8uDKXUsW5pQR282YVWHfZ" ManuallySortedPins="true">
                       <Patch Id="CVKEJTR9LdGODI5HMry2x6" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="DY63ucPYpMNLpZxwVmkYpo" Name="Then" ManuallySortedPins="true" />
-                      <Node Bounds="1037,631,58,26" Id="EMTQycgYXK4QHilLxWOKB5">
+                      <Node Bounds="266,641,58,26" Id="EMTQycgYXK4QHilLxWOKB5">
                         <p:NodeReference LastCategoryFullName="Primitive.IDisposable" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Dispose" />
@@ -317,10 +317,10 @@
                         <Pin Id="L6mb4vlTWfcMBL7ZbO3Zwl" Name="Output" Kind="StateOutputPin" />
                       </Node>
                     </Patch>
-                    <ControlPoint Id="Bjk1MAc4xENPA0u6U6r3UT" Bounds="1007,613" Alignment="Top" />
-                    <ControlPoint Id="EzG6EX61ffrQZ2SkDPysW8" Bounds="1007,673" Alignment="Bottom" />
+                    <ControlPoint Id="Bjk1MAc4xENPA0u6U6r3UT" Bounds="236,622" Alignment="Top" />
+                    <ControlPoint Id="EzG6EX61ffrQZ2SkDPysW8" Bounds="236,683" Alignment="Bottom" />
                   </Node>
-                  <Node Bounds="1005,557,56,19" Id="VlD8UIwonYULXYzJKHRB27">
+                  <Node Bounds="234,567,56,19" Id="VlD8UIwonYULXYzJKHRB27">
                     <p:NodeReference LastCategoryFullName="RGBA.ColorThief.ColorThief" LastSymbolSource="VL.ColorThief.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="GetColor" />
@@ -339,7 +339,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="VO4Q9eVc8SJPK5surPoAIK" Comment="Trigger" Bounds="920,283,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VO4Q9eVc8SJPK5surPoAIK" Comment="Trigger" Bounds="149,293,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -347,7 +347,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="918,763,65,19" Id="KpZKwWCysXzPfobB5wsfHQ">
+          <Node Bounds="147,773,65,19" Id="KpZKwWCysXzPfobB5wsfHQ">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -357,13 +357,14 @@
             <Pin Id="JUaMhycrrRXOztArJpgWHt" Name="Value" Kind="OutputPin" />
             <Pin Id="J2oEYOG273VLRbLNO5q3gV" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="Bb9dTaRA5V3PwycJq1TUSh" Comment="" Bounds="920,862,35,95" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IjCD18qpMnLNcvsgPy5gqL" Comment="On Data" Bounds="980,805,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QKcgDko6ubTOdCpjLnete5" Comment="In Progress" Bounds="1158,797,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1294,753,63,19" Id="BZAkqGEtUipL8HrFcG1j2a">
+          <Pad Id="Bb9dTaRA5V3PwycJq1TUSh" Comment="" Bounds="149,872,47,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IjCD18qpMnLNcvsgPy5gqL" Comment="On Data" Bounds="209,815,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QKcgDko6ubTOdCpjLnete5" Comment="In Progress" Bounds="387,852,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="523,808,63,19" Id="BZAkqGEtUipL8HrFcG1j2a">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Stopwatch" />
+              <Choice Kind="ProcessNode" Name="Stopwatch (Old)" />
+              <FullNameCategoryReference ID="Animation" />
             </p:NodeReference>
             <Pin Id="TlIbZGZODRFN5RbncHksHI" Name="Enabled" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -378,13 +379,32 @@
               </p:TypeAnnotation>
             </Pin>
           </Node>
-          <Pad Id="Q7T9eBvIRizPhYTHVxRgYj" Comment="Time" Bounds="1296,808,35,15" ShowValueBox="true" isIOBox="true" />
-          <ControlPoint Id="NJ5oUXXvEElOZqAhYm7IOx" Bounds="1355,400" />
-          <Pad Id="HbEG2YnkiDvO0vTQKU4dgJ" Comment="Search Pattern" Bounds="992,93,35,15" ShowValueBox="true" isIOBox="true" Value="*.png">
+          <Pad Id="Q7T9eBvIRizPhYTHVxRgYj" Comment="Time" Bounds="525,863,35,15" ShowValueBox="true" isIOBox="true" />
+          <ControlPoint Id="NJ5oUXXvEElOZqAhYm7IOx" Bounds="584,410" />
+          <Pad Id="HbEG2YnkiDvO0vTQKU4dgJ" Comment="Search Pattern" Bounds="221,103,35,15" ShowValueBox="true" isIOBox="true" Value="*.png">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="FXhKnEZBu48ODcK0461WL4" Bounds="641,474,254,19" ShowValueBox="true" isIOBox="true" Value="Asset images provided by Alex Le Guillou">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GwCqyW347cpL8Hn1DpPOGs" Bounds="683,504,164,19" ShowValueBox="true" isIOBox="true" Value="https://alexleguillou.com/">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="JLRyzwVZDIGQSYfRzLPAUk" Name="" Bounds="631,443,287,100" />
         </Canvas>
         <Patch Id="FeieOYGeP6MLlvOGaBuYGj" Name="Create" />
         <Patch Id="T6RwBj28siBOsM7rC7tl7X" Name="Update" />
@@ -422,6 +442,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="M31UR4IsWz5PwiBetIN5PM" Location="VL.Skia" Version="2019.2.0-0124-gc7212e4e88" />
+  <NugetDependency Id="M31UR4IsWz5PwiBetIN5PM" Location="VL.Skia" Version="2020.3.0-0053-gd338f20e7b" />
   <DocumentDependency Id="VOHVUS5WeXXLjwnI6boanG" Location="../../VL.ColorThief.vl" />
 </Document>
