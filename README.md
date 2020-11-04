@@ -1,5 +1,7 @@
 # VL.ColorThief
 
+[![Nuget](https://img.shields.io/nuget/v/VL.ColorThief?style=flat-square)](https://www.nuget.org/packages/VL.ColorThiefs)
+
 Allows to extract color palettes and dominant color from an image.
 
 VL implementation of [KSemenenko's ColorThief](https://github.com/KSemenenko/ColorThief) library.
