@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FNGbWvswdGGQC4W5Ia0Ykv" LanguageVersion="2020.3.0.53" Version="0.128">
-  <NugetDependency Id="DgpRfqIpBEVQWHiVjjQNIv" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+<Document xmlns:p="property" Id="FNGbWvswdGGQC4W5Ia0Ykv" LanguageVersion="2021.4.6.798" Version="0.128">
+  <NugetDependency Id="DgpRfqIpBEVQWHiVjjQNIv" Location="VL.CoreLib" Version="2021.4.6-0798-g3c0b9ff69e" />
   <Patch Id="Vcj5XxFbv1kMYLngwlgvdR">
     <Canvas Id="SgpOV0Ld5okPpo3a17ZNpg" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -83,6 +83,7 @@
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="EnnnseSODHXLmAIPUfxlDo" Name="Alignment" Kind="InputPin" />
               <Pin Id="GDaiI48NNsWNxvnJztuF8l" Name="Phase" Kind="InputPin" />
               <Pin Id="KvkyFisx2yWMLoyRUpFG4f" Name="Count" Kind="InputPin" />
               <Pin Id="Cwr5XBRkWgZPVXZkcuzdvU" Name="Output" Kind="OutputPin" />
@@ -102,6 +103,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
               </p:NodeReference>
               <Pin Id="KIjGmIzZun9NMUMs2yQYRm" Name="Input" Kind="InputPin" />
+              <Pin Id="KlQAlKu0UHJMKiTAMBSPVz" Name="Debug" Kind="InputPin" />
               <Pin Id="Lz3MSrQ74IxNjn8zJdVgGh" Name="Enabled" Kind="InputPin" />
               <Pin Id="CPyUEipPx0RNvcY7k7YVSd" Name="Output" Kind="OutputPin" />
             </Node>
@@ -144,6 +146,8 @@
               </p:NodeReference>
               <Pin Id="B0qsaXE4xu7OCJnuL8onpJ" Name="Input" Kind="InputPin" />
               <Pin Id="NTSV6WfkesTL4Hq7HQW3do" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Hseu0og9DVHPWtsL0BDaIn" Name="Debug" Kind="InputPin" />
+              <Pin Id="U7vipSvt1QLP9enzqxkUzn" Name="Enabled" Kind="InputPin" />
               <Pin Id="NsHvUKYY2i5NxdvFv6XpiI" Name="Output" Kind="OutputPin" />
             </Node>
           </Canvas>
@@ -359,25 +363,21 @@
           </Node>
           <Pad Id="Bb9dTaRA5V3PwycJq1TUSh" Comment="" Bounds="149,872,47,43" ShowValueBox="true" isIOBox="true" />
           <Pad Id="IjCD18qpMnLNcvsgPy5gqL" Comment="On Data" Bounds="209,815,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QKcgDko6ubTOdCpjLnete5" Comment="In Progress" Bounds="387,852,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QKcgDko6ubTOdCpjLnete5" Comment="In Progress" Bounds="397,834,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="523,808,63,19" Id="BZAkqGEtUipL8HrFcG1j2a">
             <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="Stopwatch (Old)" />
               <FullNameCategoryReference ID="Animation" />
             </p:NodeReference>
-            <Pin Id="TlIbZGZODRFN5RbncHksHI" Name="Enabled" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="TlIbZGZODRFN5RbncHksHI" Name="Enabled" Kind="InputPin" />
             <Pin Id="RpFioFAjqmlMygBSBm2drd" Name="Initial Time" Kind="InputPin" />
-            <Pin Id="UbwMdyIShcEPaTFVkipWLL" Name="Time" Kind="OutputPin" />
             <Pin Id="B8rXgTpqFT5O7KYuM9lYiL" Name="Reset" Kind="InputPin" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="UbwMdyIShcEPaTFVkipWLL" Name="Time" Kind="OutputPin" />
           </Node>
           <Pad Id="Q7T9eBvIRizPhYTHVxRgYj" Comment="Time" Bounds="525,863,35,15" ShowValueBox="true" isIOBox="true" />
           <ControlPoint Id="NJ5oUXXvEElOZqAhYm7IOx" Bounds="584,410" />
@@ -442,6 +442,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="M31UR4IsWz5PwiBetIN5PM" Location="VL.Skia" Version="2020.3.0-0053-gd338f20e7b" />
+  <NugetDependency Id="M31UR4IsWz5PwiBetIN5PM" Location="VL.Skia" Version="2021.4.6-0798-g3c0b9ff69e" />
   <DocumentDependency Id="VOHVUS5WeXXLjwnI6boanG" Location="../../VL.ColorThief.vl" />
 </Document>

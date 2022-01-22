@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UOTxbo8Nfl8OGSss3Lq5cb" LanguageVersion="2020.3.0.53" Version="0.128">
-  <NugetDependency Id="DgpRfqIpBEVQWHiVjjQNIv" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+<Document xmlns:p="property" Id="UOTxbo8Nfl8OGSss3Lq5cb" LanguageVersion="2021.4.6.798" Version="0.128">
+  <NugetDependency Id="DgpRfqIpBEVQWHiVjjQNIv" Location="VL.CoreLib" Version="2021.4.6-0798-g3c0b9ff69e" />
   <Patch Id="Vcj5XxFbv1kMYLngwlgvdR">
     <Canvas Id="SgpOV0Ld5okPpo3a17ZNpg" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -105,6 +105,8 @@
                   </p:NodeReference>
                   <Pin Id="B2VN811zmQ2OPNUMYQdE8H" Name="Input" Kind="InputPin" />
                   <Pin Id="KNOzt1ic7D9MsuS5JkSuwV" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="DZmsQAnTLmONilRNEbonkP" Name="Debug" Kind="InputPin" />
+                  <Pin Id="SS6w1UC1hnePoCDRY5Ga5O" Name="Enabled" Kind="InputPin" />
                   <Pin Id="B92D67u5ISRQICWmD0nRHK" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="448,410,46,19" Id="RUL7Grcn2FZOmSwo8JRJfo">
@@ -160,6 +162,7 @@
                   <Choice Kind="TypeFlag" Name="Float32" />
                 </p:TypeAnnotation>
               </Pin>
+              <Pin Id="GJx6tDJhemvP6g8opdakvp" Name="Alignment" Kind="InputPin" />
               <Pin Id="GDaiI48NNsWNxvnJztuF8l" Name="Phase" Kind="InputPin" />
               <Pin Id="KvkyFisx2yWMLoyRUpFG4f" Name="Count" Kind="InputPin" />
               <Pin Id="Cwr5XBRkWgZPVXZkcuzdvU" Name="Output" Kind="OutputPin" />
@@ -179,6 +182,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
               </p:NodeReference>
               <Pin Id="KIjGmIzZun9NMUMs2yQYRm" Name="Input" Kind="InputPin" />
+              <Pin Id="CZXCAdud8pOO56RiYZTV1a" Name="Debug" Kind="InputPin" />
               <Pin Id="Lz3MSrQ74IxNjn8zJdVgGh" Name="Enabled" Kind="InputPin" />
               <Pin Id="CPyUEipPx0RNvcY7k7YVSd" Name="Output" Kind="OutputPin" />
             </Node>
@@ -201,8 +205,10 @@
               </p:NodeReference>
               <Pin Id="B0qsaXE4xu7OCJnuL8onpJ" Name="Input" Kind="InputPin" />
               <Pin Id="NTSV6WfkesTL4Hq7HQW3do" Name="Input 2" Kind="InputPin" />
-              <Pin Id="NsHvUKYY2i5NxdvFv6XpiI" Name="Output" Kind="OutputPin" />
               <Pin Id="AhejjNHtm6DLkg5ninf4ls" Name="Input 3" Kind="InputPin" />
+              <Pin Id="OxmSBbRURbnMv5H2sW8yQJ" Name="Debug" Kind="InputPin" />
+              <Pin Id="AoyV6eEPGI2LYdAvvPf72e" Name="Enabled" Kind="InputPin" />
+              <Pin Id="NsHvUKYY2i5NxdvFv6XpiI" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="87,91,76,19" Id="Kl5yy9VdpJwMQpR0CA87Ju">
               <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
@@ -380,6 +386,8 @@
               </p:NodeReference>
               <Pin Id="DN4ICAy5rgFOoWAWjQbAWf" Name="Input" Kind="InputPin" />
               <Pin Id="I8FSWf6QYEpLpRxGlku2S9" Name="Input 2" Kind="InputPin" />
+              <Pin Id="P4DJ7oO8xmRMByY5gtG54K" Name="Debug" Kind="InputPin" />
+              <Pin Id="GKsC7A5iIMEMbXIJkn2gU9" Name="Enabled" Kind="InputPin" />
               <Pin Id="TKKdfXmbrftNOUBw0LhIix" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="395,336,45,19" Id="VsQfNCkfbVENvfhicLxstq">
@@ -447,11 +455,6 @@
           <Patch Id="QOtAgsOitJQP9hlop95Abq" Name="Update">
             <Pin Id="AONbEFHezpmPpSH6v78EaV" Name="Output" Kind="OutputPin" Bounds="406,603" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="EBgUQrSClMZQa2cniDPf1a">
             <Fragment Id="BVA3clISrLjL8ydvVaNz5Z" Patch="T8okHfHnUP8OqMJQavgGDf" Enabled="true" />
             <Fragment Id="GwBqYKohJtFN3xAQCr9Y4b" Patch="QOtAgsOitJQP9hlop95Abq" Enabled="true" />
@@ -535,7 +538,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="NkvwU58ynGhOXgtbsxHawK" Name="Size Mode" Kind="InputPin" DefaultValue="AutoHeight">
-              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia.Imaging" LastSymbolSource="VL.Skia.vl">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="SizeMode" />
               </p:TypeAnnotation>
             </Pin>
@@ -551,17 +554,16 @@
               <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:NodeReference>
-            <Pin Id="BFldKQdSWwJN0xsjNGpVWj" Name="Force" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <ControlPoint Id="LXlpLMfvZ0WNscwSnuy9Zl" Bounds="241,343" Alignment="Top" />
+            <ControlPoint Id="PbKqb2o8TFgLyMDI92ONzg" Bounds="241,417" Name="Palette" Alignment="Bottom" />
+            <ControlPoint Id="Eg4nvqCt0DBP2AJu4Ma7jX" Bounds="351,417" Name="Color" Alignment="Bottom" />
+            <Pin Id="BFldKQdSWwJN0xsjNGpVWj" Name="Force" Kind="InputPin" />
             <Pin Id="KPz7LhyrTdKO89ibwOBc5V" Name="Dispose Cached Outputs" Kind="InputPin" />
             <Pin Id="U1EdFiH4U9AMT2fvtvp4WO" Name="Has Changed" Kind="OutputPin" />
             <Patch Id="J4bLHgMzOXPL0Wt4LziqFF" ManuallySortedPins="true">
               <Patch Id="GvBgKC3k1MCMNUys1WRMM8" Name="Create" ManuallySortedPins="true" />
               <Patch Id="EoKhYG5JxGBM89ME7ZiUxw" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="239,374,65,19" Id="VPEAW4kCDKcPu2zCFPFvls">
+              <Node Bounds="239,374,31,19" Id="VPEAW4kCDKcPu2zCFPFvls">
                 <p:NodeReference LastCategoryFullName="RGBA.ColorThief.ColorThief" LastSymbolSource="VL.ColorThief.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ColorThief" />
@@ -574,17 +576,9 @@
                 </p:NodeReference>
                 <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="B9EVpFCWQjCNvKCmOn3vbV" Name="Source Image" Kind="InputPin" />
-                <Pin Id="GNymVcyHlUyMjSZPQ91JzV" Name="Color Count" Kind="InputPin" DefaultValue="8">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Integer32" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="VsdI8dithXSNZ9O2tOLeR6" Name="Quality" Kind="InputPin" DefaultValue="1">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="Integer32" />
-                  </p:TypeAnnotation>
-                </Pin>
-                <Pin Id="T8iwRS0WUFsNYqCT231QJm" Name="Ignore White" Kind="InputPin" />
+                <Pin Id="HYqhA8tvevbQN7YTxvRKQG" Name="Color Count" Kind="InputPin" />
+                <Pin Id="PcOeMfSbvNELwFoU9SoPxY" Name="Quality" Kind="InputPin" />
+                <Pin Id="LXuuopnybIvOg9GT6LczmE" Name="Ignore White" Kind="InputPin" />
                 <Pin Id="VkWMD2JojvEMAQCa2CPMWO" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="349,374,56,19" Id="K5hkbsYfrUANPof77c85Jl">
@@ -604,13 +598,10 @@
                     <Choice Kind="TypeFlag" Name="Integer32" />
                   </p:TypeAnnotation>
                 </Pin>
-                <Pin Id="Fw5jKnuRMTBOHqKPB7J55J" Name="Ignore White" Kind="InputPin" />
+                <Pin Id="DthrupvaT9xOTUWPAPolJf" Name="Ignore White" Kind="InputPin" />
                 <Pin Id="Dsn5CrVGZVSNZNJmu9zAyK" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="LXlpLMfvZ0WNscwSnuy9Zl" Bounds="241,343" Alignment="Top" />
-            <ControlPoint Id="PbKqb2o8TFgLyMDI92ONzg" Bounds="241,417" Name="Palette" Alignment="Bottom" />
-            <ControlPoint Id="Eg4nvqCt0DBP2AJu4Ma7jX" Bounds="351,417" Name="Color" Alignment="Bottom" />
           </Node>
           <Node Bounds="239,572,115,19" Id="SwUaqsq9rHrLVViRz1Nyaj">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Extract dominant colors from an image.vl">
@@ -627,6 +618,8 @@
             </p:NodeReference>
             <Pin Id="Onu3DzbVkojQd489w3l4BN" Name="Input" Kind="InputPin" />
             <Pin Id="SXIlxbI3K1dNISxbpQk142" Name="Input 2" Kind="InputPin" />
+            <Pin Id="IHM3YCfgKo4PgFxTu45DTw" Name="Debug" Kind="InputPin" />
+            <Pin Id="KZ9n3wLBrj4MANw5Lw2ZnF" Name="Enabled" Kind="InputPin" />
             <Pin Id="TAvgiKy9md0ObGZawGL9bD" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="RvPBYslAIHrQDkzNxuU1Qt" Comment="Filename" Bounds="94,215,140,15" ShowValueBox="true" isIOBox="true" Value="assets\06-04-20-02-14-53.png">
@@ -746,9 +739,9 @@
                   </PinReference>
                 </p:NodeReference>
                 <Pin Id="FRZLaqygXIbQa5lGhtdCdx" Name="Source Image" Kind="InputPin" />
-                <Pin Id="RzVOWoU6Ot7Mq6imDlDmOs" Name="Color Count" Kind="InputPin" />
-                <Pin Id="PcnkidKr2qgOGYvIA5X1cX" Name="Quality" Kind="InputPin" />
-                <Pin Id="BSpCLVcP7MSNOMDxD3IpHY" Name="Ignore White" Kind="InputPin" />
+                <Pin Id="Tc13Kx2YxteNsOGHWQiHW6" Name="Color Count" Kind="InputPin" />
+                <Pin Id="IH0NkdPJCC7MZV1hmVmO1E" Name="Quality" Kind="InputPin" />
+                <Pin Id="MCvbxZNAT3zMVBK7wjQlIW" Name="Ignore White" Kind="InputPin" />
                 <Pin Id="JEUm9TN41KRQbmWPEgGfvO" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="646,692,56,19" Id="EbPUiNwuh7QLYuTxY9cvVA">
@@ -777,8 +770,8 @@
                   </PinReference>
                 </p:NodeReference>
                 <Pin Id="CgQp8ee8RNhPvrjvObjfLe" Name="Source Image" Kind="InputPin" />
-                <Pin Id="Rk5YPxW1kaQPidlwJ3TreO" Name="Quality" Kind="InputPin" />
-                <Pin Id="HADr4iAzJWpLxM79s6mABb" Name="Ignore White" Kind="InputPin" />
+                <Pin Id="BNIxdGSIbpVMXpe8GXfmAh" Name="Quality" Kind="InputPin" />
+                <Pin Id="ET1hEH6UMKFM58JEAos69V" Name="Ignore White" Kind="InputPin" />
                 <Pin Id="V0yeyNXizqILhAFpIWqCRN" Name="Result" Kind="OutputPin" />
               </Node>
             </Patch>
@@ -816,6 +809,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="M31UR4IsWz5PwiBetIN5PM" Location="VL.Skia" Version="2020.3.0-0053-gd338f20e7b" />
+  <NugetDependency Id="M31UR4IsWz5PwiBetIN5PM" Location="VL.Skia" Version="2021.4.6-0798-g3c0b9ff69e" />
   <DocumentDependency Id="VOHVUS5WeXXLjwnI6boanG" Location="../../VL.ColorThief.vl" />
 </Document>
