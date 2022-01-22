@@ -18,6 +18,8 @@ nuget install VL.ColorThief -pre
 
 Images assets provided in the help patches by [Alex Le Guillou](https://alexleguillou.com/)
 
+Thanks to [sebl](https://github.com/sebllll) and [texone](https://github.com/texone) for their contributions!
+
 ## Usage
 
 Press <kbd>F1</kbd> to open the Help Browser and search for ColorThief
